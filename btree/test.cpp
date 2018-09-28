@@ -7,6 +7,9 @@ typedef struct BSTNode {
   struct BSTNode *lchild, *rchild;
 }BSTNode;
 
+
+
+
 int main(int argc, char const *argv[]) {
   /* code */
   return 0;
