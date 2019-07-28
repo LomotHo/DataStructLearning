@@ -6,6 +6,7 @@
 //   struct BiTNode *lchild, *rchild;
 // } BiTNode, *BiTree;
 
+// BST 二叉排序树 插入
 BiElemType BSTInsert(BiTree &T, BiElemType key) {
   if (T == NULL) {
     T = (BiTree)malloc(sizeof(BiTNode));
@@ -22,6 +23,7 @@ BiElemType BSTInsert(BiTree &T, BiElemType key) {
   return -1;
 }
 
+// 初始化二叉树 BST
 bool InitBST(BiTree &T, BiElemType str[], int strLength) {
   T = NULL;
   for (int i = 0; i < strLength; i++) {
@@ -30,6 +32,7 @@ bool InitBST(BiTree &T, BiElemType str[], int strLength) {
   return true;
 }
 
+// 中序遍历 二叉树 不指定二叉树类型
 bool InOrder(BiTree T) {
   if (T != NULL) {
     InOrder(T->lchild);
@@ -39,6 +42,7 @@ bool InOrder(BiTree T) {
   return true;
 }
 
+// 先序遍历 二叉树 不指定二叉树类型
 bool PreOrder(BiTree T) {
   if (T != NULL) {
     printf("%3d", T->c);
