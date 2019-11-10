@@ -19,7 +19,7 @@ bool InOrder(BiTree T);
 
 //栈的相关数据结构
 #define MaxSize 50
-    typedef BiTree ElemType;
+typedef BiTree ElemType;
 typedef struct{
 	ElemType data[MaxSize];
 	int top;

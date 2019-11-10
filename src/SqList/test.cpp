@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "stdlib.h"
 
 #define MaxSize 50
 typedef int ElemType;
@@ -7,7 +7,7 @@ typedef int ElemType;
 typedef struct{
 	ElemType data[MaxSize];
 	int length;
-} SqList; 
+} SqList;
 
 bool ShowList(SqList &l) {
 	for (int i = 0; i < l.length; ++i) {
@@ -21,7 +21,7 @@ bool ListInsert(SqList &l, int postion, ElemType e) {
 		printf("insert postion err\n");
 		return false;
 	}
-	if(L.length>=MaxSize) {
+	if(l.length>=MaxSize) {
 		return false;
 	}
 	for (int i = l.length; i >= postion; i--) {
@@ -68,6 +68,6 @@ int main(int argc, char const *argv[]) {
 	ShowList(l);
 	printf("ret: %d\n", ret);
 
-	
+
 	return 0;
 }

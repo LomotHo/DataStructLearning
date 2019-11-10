@@ -4,7 +4,7 @@
 typedef int ElemType;
 typedef struct LNode {
 	ElemType data;
-	struct LNode *next;	
+	struct LNode *next;
 }LNode, *LinkList;
 
 //按序号查找结点值
