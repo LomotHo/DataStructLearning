@@ -7,13 +7,14 @@ ElemType stack[MaxSize];
 int top = -1;
 
 int main() {
-  int a = 2;
+  // 初始化数据
+  int a = 2, b = 0;
 
   // a入栈 [简写 push(stack, a)]
   stack[++top] = a;
 
   // 出栈，赋值给x  [简写 pop(stack)]
-  int x = stack[top--];
+  b = stack[top--];
 
   return 0;
 }
